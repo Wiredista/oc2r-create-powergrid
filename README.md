@@ -30,3 +30,5 @@ This is accomplished by mimicking Create's existing CC: Tweaked peripherals usin
 - [Stressometer](https://github.com/TechTastic/oc2r-create/wiki/Stressometer)
 - [Table Cloth](https://github.com/TechTastic/oc2r-create/wiki/Table-Cloth)
 - [Train Station](https://github.com/TechTastic/oc2r-create/wiki/Train-Station)
+- [Voltage Gauge](https://github.com/Wiredista/oc2r-create-powergrid/blob/1.20.1/create6/POWER_GRID.md)
+- [Speedometer](https://github.com/Wiredista/oc2r-create-powergrid/blob/1.20.1/create6/POWER_GRID.md)
