@@ -3,6 +3,7 @@ package io.github.techtastic.oc2rcreate.device;
 import io.github.techtastic.oc2rcreate.OC2RCreate;
 import io.github.techtastic.oc2rcreate.device.block.blaze_burner.BlazeBurnerDeviceProvider;
 import io.github.techtastic.oc2rcreate.device.block.clipboard.ClipboardDeviceProvider;
+import io.github.techtastic.oc2rcreate.device.block.current_gauge.CurrentGaugeDeviceProvider;
 import io.github.techtastic.oc2rcreate.device.block.display_link.DisplayLinkDeviceProvider;
 import io.github.techtastic.oc2rcreate.device.block.ejector.EjectorDeviceProvider;
 import io.github.techtastic.oc2rcreate.device.block.frogport.FrogportDeviceProvider;
@@ -17,6 +18,7 @@ import io.github.techtastic.oc2rcreate.device.block.stock_ticker.StockTickerDevi
 import io.github.techtastic.oc2rcreate.device.block.stressometer.StressometerDeviceProvider;
 import io.github.techtastic.oc2rcreate.device.block.table_cloth.TableClothDeviceProvider;
 import io.github.techtastic.oc2rcreate.device.block.train_station.TrainStationDeviceProvider;
+import io.github.techtastic.oc2rcreate.device.block.voltage_gauge.VoltageGaugeDeviceProvider;
 import li.cil.oc2.api.bus.device.provider.BlockDeviceProvider;
 import li.cil.oc2.api.util.Registries;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -42,6 +44,8 @@ public class BlockDeviceProviders {
     public static final RegistryObject<BlockDeviceProvider> CLIPBOARD;
     public static final RegistryObject<BlockDeviceProvider> BLAZE_BURNER;
     public static final RegistryObject<BlockDeviceProvider> SCHEMATICANNON;
+    public static final RegistryObject<BlockDeviceProvider> VOLTAGE_GAUGE;
+    public static final RegistryObject<BlockDeviceProvider> CURRENT_GAUGE;
 
     public static void register(IEventBus bus) {
         BLOCK_PROVIDERS.register(bus);
@@ -66,5 +70,7 @@ public class BlockDeviceProviders {
         CLIPBOARD = BLOCK_PROVIDERS.register("clipboard", ClipboardDeviceProvider::new);
         BLAZE_BURNER = BLOCK_PROVIDERS.register("blaze_burner", BlazeBurnerDeviceProvider::new);
         SCHEMATICANNON = BLOCK_PROVIDERS.register("schematicannon", SchematiCannonDeviceProvider::new);
+        VOLTAGE_GAUGE = BLOCK_PROVIDERS.register("voltage_gauge", VoltageGaugeDeviceProvider::new);
+        CURRENT_GAUGE = BLOCK_PROVIDERS.register("current_gauge", CurrentGaugeDeviceProvider::new);
     }
 }
